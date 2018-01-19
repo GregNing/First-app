@@ -5,4 +5,5 @@ class User < ApplicationRecord
         :recoverable, :rememberable, :trackable, :validatable
   #連結user 與  group 雙向關西
   has_many :groups
+  has_many :posts
 end
