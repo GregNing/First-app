@@ -13,6 +13,7 @@ class GroupsController < ApplicationController
 
     def create
     @group = Group.new(group_params)
+    #將登入資訊使用者 給予 group.user 再從 view取出使用
     @group.user = current_user
     
     if @group.save
