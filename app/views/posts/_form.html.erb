@@ -1,0 +1,8 @@
+<%= simple_form_for @posts do |f| %>
+    <div class="form-group">
+        <%= f.input :content, input_html: { class: "form-control" }%>            
+    </div>
+    <%= f.submit "Submit", class: "btn btn-primary", data: {disable_with: "Submiting..."}%>
+<% end %>
+<br>
+<%= link_to("Back To 發文頁", account_posts_path ,  class: "btn btn-primary pull-right")%>

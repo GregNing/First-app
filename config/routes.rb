@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :groups do
     member do
       post :join
-      post  :quit
+      post  :quit    
     end
     resources :posts
   end
@@ -11,6 +11,7 @@ Rails.application.routes.draw do
     resources :groups
     resources :posts    
   end
+  resources :posts
   #root 'welcome#index'
   root 'groups#index'
 
